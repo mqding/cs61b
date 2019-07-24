@@ -151,6 +151,7 @@ public class LinkedListDeque<T> {
         L1.printDeque();
         L1.removeLast();
         L1.printDeque();
+        L.equals(L);
     }
 }
 
