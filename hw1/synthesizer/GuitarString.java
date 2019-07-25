@@ -33,7 +33,9 @@ public class GuitarString {
         //       double r = Math.random() - 0.5;
         //
         //       Make sure that your random numbers are different from each other.
-        for (int i = 0; i < buffer.capacity(); i += 1) {
+        //for (int i = 0; i < buffer.capacity(); i += 1)
+        for (double i : buffer)
+        {
             buffer.dequeue();
             double r = Math.random() - 0.5;
             buffer.enqueue(r);
@@ -53,7 +55,7 @@ public class GuitarString {
         buffer.dequeue();
         double a2 = buffer.peek();
 
-        buffer.enqueue((a1 + a2) / 2);
+        buffer.enqueue(DECAY * (a1 + a2) / 2);
     }
 
     /* Return the double at the front of the buffer. */
