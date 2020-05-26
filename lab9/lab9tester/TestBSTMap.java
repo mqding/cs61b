@@ -57,6 +57,7 @@ public class TestBSTMap {
         assertEquals(null, b.get("starChild"));
         assertEquals(0, b.size());
         b.put("starChild", 5);
+        assertEquals(1,b.size());
         assertTrue(((Integer) b.get("starChild")).equals(5));
         b.put("KISS", 5);
         assertTrue(((Integer) b.get("KISS")).equals(5));
